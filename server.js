@@ -1,13 +1,9 @@
 var net = require("net");
 
-var server = net.createServer(function(c) {
-  console.log('server connected');
-  c.on('end', function() {
-    console.log('server disconnected');
+net.createServer(function(socket) {
+  socket.write("Hello there!");
+
+  socket.on("data", function(message) {
+    console.log(message.toString());
   });
-  c.write('hello\r\n');
-  c.pipe(c);
-});
-server.listen(8124, function() {
-  console.log('server bound');
-});
+}).listen(7777);
