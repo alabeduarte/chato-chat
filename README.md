@@ -10,4 +10,4 @@
   telnet localhost 7777
 ```
 
-#### Credits and thanks to @nando_vieira (http://howtocode.com.br)
+#### Credits and thanks to @fnando (http://howtocode.com.br)
