@@ -4,8 +4,8 @@
   node server.js
 ```
 
-## Enter on chat:
+## Enter on chat (foreach client):
 
 ```bash
-  telnet localhost 7777 //for each client
+  telnet localhost 7777
 ```
