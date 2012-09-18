@@ -1,5 +1,5 @@
 var net = require("net")
-  , Client = require(".lib/client")
+  , Client = require("./lib/client")
 ;
 
 net.createServer(function(socket) {
