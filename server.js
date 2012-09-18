@@ -1,9 +1,7 @@
-var net = require("net");
+var net = require("net")
+  , Client = require(".lib/client")
+;
 
 net.createServer(function(socket) {
-  socket.write("Hello there!");
-
-  socket.on("data", function(message) {
-    console.log(message.toString());
-  });
+  var client = Client.create(socket);
 }).listen(7777);
