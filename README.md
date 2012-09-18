@@ -1,4 +1,4 @@
-# Chat with NodeJs
+# Chat with Node.js
 
 ```bash
   node server.js
